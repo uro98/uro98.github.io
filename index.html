@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yu Jo Tseng</title>
+    <link rel="stylesheet" href="assets/jquery.bxslider/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Allura|Open+Sans" rel="stylesheet">
+
+    <!-- Site icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/icon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/icon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/icon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/icon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/icon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/icon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/icon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/icon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/icon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/icon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon.ico/favicon-16x16.png">
+    <link rel="manifest" href="assets/icon.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/icon.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body>
+    <!-- For parallax (it needs the 1.11.0 version of jQuery) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/parallax.js-1.4.2/parallax.min.js"></script>
+    <!-- load newer version of jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- For hide/show -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- For jump-scrolling -->
+    <script src="assets/jquery.scrollTo-2.1.2/jquery.scrollTo.min.js"></script>
+    <!-- For bxSlider -->
+    <script src="assets/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Navigation bar -->
+    <header class="site-header">
+      <div class="site-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Fullscreen parallax -->
+    <div class="intro" data-parallax="scroll" data-image-src="assets/img/aurora.jpg" data-z-index="-1">
+      <div class="inner">
+        <div class="content">
+          <h1>Yu Jo Tseng</h1>
+          <p>Hello! My name is Yu Jo and I’m a Computer Science student at The University of Edinburgh.</p>
+          <p>On a typical day, I am either making games, playing games or thinking about stargazing... while Edinburgh rains. Apart from that, I also like playing around with technologies I haven't used before (Front-end web dev is my latest kick, the result is this website), or just anything new in general.</p>
+          <p>You can find some of the games and projects I made below.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main body -->
+    <main>
+      <!-- For jumping to Projects without nav bar blocking it -->
+      <span class="anchor" id="projects"></span>
+      <!-- Projects -->
+      <div class="projects">
+        <h2>Projects</h2>
+        <p id="sc" class="current">Currently I am working on a FPS game in Unity.</p>
+
+        <!-- Slide -->
+        <div>
+          <div id="bohredAtoms" class="slide">
+            <h3>Bohred Atoms</h3>
+            <div class="slider">
+              <ul class="bohredAtomsSlider bxslider">
+                <li><span class="helper"></span><img class="i" src="assets/img/bohred-atoms-menu.png" /></li>
+                <li><span class="helper"></span><img class="i" src="assets/img/bohred-atoms-htp.png" /></li>
+                <li><span class="helper"></span><img class="i" src="assets/img/bohred-atoms-screenshot.png" /></li>
+                <li><span class="helper"></span><img class="i" src="assets/img/bohred-atoms-win.png" /></li>
+              </ul>
+              <div id="bx-pager" class="bx-pager">
+                <img src="assets/img/bohred-atoms-menu.png"  onclick="bohredAtomsSlider.goToSlide(0)"/>
+                <img src="assets/img/bohred-atoms-htp.png"  onclick="bohredAtomsSlider.goToSlide(1)"/>
+                <img src="assets/img/bohred-atoms-screenshot.png"  onclick="bohredAtomsSlider.goToSlide(2)"/>
+                <img src="assets/img/bohred-atoms-win.png"  onclick="bohredAtomsSlider.goToSlide(3)"/>
+                <!--<a data-slide-index="0" href=""><img src="assets/img/bohred-atoms-menu.png" /></a>
+                <a data-slide-index="1" href=""><img src="assets/img/bohred-atoms-htp.png" /></a>
+                <a data-slide-index="2" href=""><img src="assets/img/bohred-atoms-screenshot.png" /></a>
+                <a data-slide-index="3" href=""><img src="assets/img/bohred-atoms-win.png" /></a>-->
+              </div>
+            </div>
+            <div class="detail">
+              <div class="list">
+                <p><strong>Engine:</strong> Unity</p>
+                <p><strong>Language:</strong> C#</p>
+                <p><strong>Platforms:</strong> Windows PC and Web</p>
+                <p><strong>Published:</strong> Feb 2017</p>
+              </div>
+              <div class="text">
+                <p>These atoms are so bohred they can’t take it anymore!</p>
+                <p>Bohred Atoms is a local multiplayer 2D shooter game where each player shoots the other atom’s electrons with their nuclear bullets to destroy them.</p>
+                <p>It can be played online or downloaded to Windows <a href="https://uro.itch.io/bohred-atoms" target="_blank">here</a>.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="two" class="slide">
+            Two.
+          </div>
+
+          <div id="another" class="slide">
+            <h3>Another</h3>
+            <div class="slider">
+              <ul class="anotherSlider bxslider">
+                <li><span class="helper"></span><img class="i" src="assets/img/aurora.jpg" /></li>
+                <li><span class="helper"></span><img class="i" src="assets/img/photo.jpg" /></li>
+                <li><span class="helper"></span><img class="i" src="assets/img/pic.jpg" /></li>
+                <li><span class="helper"></span><img class="i" src="assets/img/bohred-atoms-win.png" /></li>
+              </ul>
+              <div id="bx-pager" class="bx-pager">
+                <img src="assets/img/aurora.jpg"  onclick="anotherSlider.goToSlide(0)"/>
+                <img src="assets/img/photo.jpg"  onclick="anotherSlider.goToSlide(1)"/>
+                <img src="assets/img/pic.jpg"  onclick="anotherSlider.goToSlide(2)"/>
+                <img src="assets/img/bohred-atoms-win.png"  onclick="anotherSlider.goToSlide(3)"/>
+                <!--<a data-slide-index="0" href=""><img src="assets/img/aurora.jpg" /></a>
+                <a data-slide-index="1" href=""><img src="assets/img/photo.jpg" /></a>
+                <a data-slide-index="2" href=""><img src="assets/img/pic.jpg" /></a>
+                <a data-slide-index="3" href=""><img src="assets/img/bohred-atoms-win.png" /></a>-->
+              </div>
+            </div>
+            <div class="detail">
+              <div class="list">
+                <p><strong>Engine:</strong> Unity</p>
+                <p><strong>Language:</strong> C#</p>
+                <p><strong>Platforms:</strong> Windows PC and Web</p>
+                <p><strong>Published:</strong> Feb 2017</p>
+              </div>
+              <div class="text">
+                <p>This is another project.</p>
+                <p>Bohred Atoms is a local multiplayer 2D shooter game where each player shoots the other atom’s electrons with their nuclear bullets to destroy them.</p>
+                <p>It can be played online or downloaded to Windows <a href="https://uro.itch.io/bohred-atoms" target="_blank">here</a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="one">
+            <div id="bohredAtomsBox" class="box" onclick="toggleSlide('bohredAtoms')">
+              <img src="assets/img/bohred-atoms-menu.png" class="image"/>
+              <div class="middle">
+                <p class="title">Bohred Atoms<br />
+                <hr class="line" /><br />
+                <p class="description">A Local Multiplayer Shooter</p>
+              </div>
+            </div>
+            <div class="box cs">
+              <div class="middle">
+                <p class="title">Coming soon</p>
+              </div>
+            </div>
+            <div class="box cs">
+              <div class="middle">
+                <p class="title">Coming soon</p>
+              </div>
+            </div>
+          </div>
+
+          <!--<div class="two">
+            <!--<div class="coming-soon">
+              <p>Coming soon.</p>
+            </div>-
+            <div id="anotherBox" class="box"  onclick="toggleSlide('another')">
+              <img src="assets/img/bohred-atoms-menu.png" class="image"/>
+              <div class="middle">
+                <p class="title">Bohred Atoms</p>
+              </div>
+            </div>
+            <a href="#projects"><div class="box">
+              <img src="assets/img/bohred-atoms-menu.png" class="image"/>
+              <div class="middle">
+                <p class="title">Bohred Atoms</p>
+              </div>
+            </div></a>
+            <a href="#projects"><div class="box">
+              <img src="assets/img/bohred-atoms-menu.png" class="image"/>
+              <div class="middle">
+                <p class="title">Bohred Atoms</p>
+              </div>
+            </div></a>
+          </div>
+
+          <!--<div class="three">
+            <a href="#projects"><div class="box">
+              <img src="assets/img/bohred-atoms-menu.png" class="image"/>
+              <div class="middle">
+                <p class="title">Bohred Atoms</p>
+              </div>
+            </div></a>
+            <a href="#projects"><div class="box">
+              <img src="assets/img/bohred-atoms-menu.png" class="image"/>
+              <div class="middle">
+                <p class="title">Bohred Atoms</p>
+              </div>
+            </div></a>
+            <a href="#projects"><div class="box">
+              <img src="assets/img/bohred-atoms-menu.png" class="image"/>
+              <div class="middle">
+                <p class="title">Bohred Atoms</p>
+              </div>
+            </div></a>
+          </div>-->
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-width">
+        <div class="info">
+          <h2 id="contact">Contact</h2>
+          <p>You can find me on:</p>
+          <div class="links">
+            <a href="https://www.linkedin.com/in/yujotseng/" class="footer-link" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+            <a href="https://github.com/uro98" class="footer-link" target="_blank"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/yujotseng?lang=en" class="footer-link" target="_blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <img src="assets/img/atom.png"/>
+      </div>
+    </footer>
+  </body>
+</html>
