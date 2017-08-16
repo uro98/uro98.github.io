@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yu Jo Tseng</title>
+    <link rel="stylesheet" href="../style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura|Open+Sans">
+
+    <!-- Site icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/icon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/icon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/icon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/icon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/icon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/icon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/icon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/icon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../assets/icon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/icon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icon.ico/favicon-16x16.png">
+    <link rel="manifest" href="../assets/icon.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../assets/icon.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body>
+    <!-- load new version of jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- For hide/show -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- For jump-scrolling -->
+    <script src="../assets/jquery.scrollTo-2.1.2/jquery.scrollTo.min.js"></script>
+    <!-- For Galleria -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js"></script>
+    <script src="../js/main.js"></script>
+
+    <!-- Navigation bar -->
+    <header class="site-header">
+      <div class="site-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="project-main">
+      <!-- For jumping to Projects without nav bar blocking it -->
+      <span class="anchor" id="projects"></span>
+
+      <div class="projects-intro">
+        <h1><em>Bohred Atoms</em></h1>
+      </div>
+
+      <div class="gallery">
+        <img src="../assets/img/bohred-atoms-menu.png">
+        <img src="../assets/img/bohred-atoms-htp.png">
+        <img src="../assets/img/bohred-atoms-screenshot.png">
+        <img src="../assets/img/bohred-atoms-win.png">
+      </div>
+      <script>
+        Galleria.run('.gallery');
+      </script>
+
+      <div class="detail">
+        <p>These atoms are so bohred they can’t take it anymore!</p>
+        <p>Bohred Atoms is a local multiplayer 2D shooter game where each player shoots the other atom’s electrons with their nuclear bullets to destroy them.</p>
+        <p>It can be played online or downloaded to Windows <a href="https://uro.itch.io/bohred-atoms" target="_blank">here</a>.</p>
+      </div>
+
+      <div class="project-info">
+        <ul>
+          <li><strong>Engine:</strong> Unity</li>
+          <li><strong>Language:</strong> C#</li>
+          <li><strong>Platforms:</strong> Windows PC and Web</li>
+          <li><strong>Published:</strong> Feb 2017</li>
+        </ul>
+
+        <iframe frameborder="0" src="https://itch.io/embed/122499?border_width=0&amp;linkback=true&amp;bg_color=2f3538&amp;fg_color=ffffff&amp;border_color=000000" width="64%" height="167"></iframe>
+      </div>
+    </main>
+
+    <footer class="project-footer">
+      <div class="footer-width">
+        <div class="info">
+          <h2 id="contact">Contact</h2>
+          <p>You can find me on:</p>
+          <div class="links">
+            <a href="https://www.linkedin.com/in/yujotseng/" class="footer-link" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+            <a href="https://github.com/uro98" class="footer-link" target="_blank"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/yujotseng?lang=en" class="footer-link" target="_blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <img src="../assets/img/atom.png"/>
+      </div>
+    </footer>
+  </body>
+</html>
