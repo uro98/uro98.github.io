@@ -8,15 +8,19 @@ html, body {
   width: 100%;
 }
 
-// to do: responsiveness (home margin, section highlight), scrollTo inconsistent
+p {
+  margin: 16px 0;
+}
+
+// to do: responsiveness, section highlight
 
 // change container height to add more rows of boxes
 
 // Navigation bar: fixed, transparent
 .site-header {
   background: #171618;
-  padding: 10px 5%;
-  color: white;
+  height: 50px;
+  color: #fff;
   position: fixed;
   right: 0;
   width: 100%;
@@ -27,24 +31,28 @@ html, body {
 .site-nav {
   float: right;
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 15px;
+  margin-right: 60px;
 
   ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    width: 300px;
 
     li {
-      display: inline;
+      float: right;
 
       a {
         text-decoration: none;
         color: white;
+        display: block;
+        text-align: center;
+        padding: 14.8px 17px;
       }
 
       a:hover {
-        color: #99D9EA;
+        color: #7ebbff;
+        background-color: #000;
+        cursor: pointer;
       }
     }
   }
@@ -65,46 +73,50 @@ html, body {
 .intro {
   height: 100%;
   width: 100%;
-  background: transparent; // For parallax
+  background-image: url("assets/img/aurora.jpg");
+  background-attachment: fixed;
+  background-size: cover;
   top: 0;
   display: table;
-}
 
-.inner {
-  display: table-cell;
-  vertical-align: middle;
-}
+  .inner {
+    display: table-cell;
+    vertical-align: middle;
 
-.content {
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
+    .content {
+      width: 65%;
+      margin: 0 auto;
+      text-align: center;
 
-  h1 {
-    font-size: 180px;
-    font-family: "Allura", cursive;
-    color: #99D9EA;
-    margin-top: 20px;
-    margin-bottom: 40px;
-  }
+      h1 {
+        font-size: 180px;
+        font-family: "Allura", cursive;
+        color: #7ebbff; //99D9EA
+        z-index: 0;
+      }
 
-  p {
-    margin: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    color: #fff;
-    line-height: 180%;
+      p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        color: #fff;
+      }
+
+      .hobbies {
+        margin-top: -40px;
+        margin-bottom: 100px;
+      }
+    }
   }
 }
 
 @media (max-width: 1200px) {
-  .content h1 {
+  .intro .inner .content h1 {
     font-size: 130px;
   }
 }
 
 @media (max-width: 780px) {
-  .content {
+  .intro .inner .content {
     h1 {
       font-size: 50px;
     }
@@ -112,19 +124,61 @@ html, body {
     p {
       font-size: 12px;
     }
+
+    .hobbies {
+      margin-top: 10px;
+      margin-bottom: 70px;
+    }
   }
 }
 
-// Portfolio
-.main, .footer-width {
-  width: 940px;
-  margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
+// About
+.section {
+  padding-top: 100px;
 }
 
-main h2, p {
-  margin-left: 30px;
-  margin-right: 30px;
+.about {
+  color: #DCDCDC;
+}
+
+#about {
+  background-color: #2a3439;
+}
+
+.about-text {
+  width: 880px;
+  margin: 0 auto;
+  padding-bottom: 84px;
+
+  h2 {
+    margin-top: 0;
+    color: #fff;
+  }
+
+  p {
+    line-height: 160%;
+  }
+}
+
+// Projects
+.main {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #D1DBDD;
+}
+
+.projects {
+  width: 940px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  h2, p {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 
 .container {
@@ -165,7 +219,9 @@ main h2, p {
 }
 
 .box:hover {
-  .image, .middle {
+  transform: scale(1.05);
+
+  .image, .pointer {
     cursor: pointer;
   }
 
@@ -180,31 +236,29 @@ main h2, p {
 
 .title {
   font-size: 20px;
-  margin: 0;
+  margin: 16px 0;
 }
 
-hr.line {
+.line {
   border-top: 1px solid #fff;
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 .description {
   font-size: 15px;
 }
 
-.cs {
+.text-box {
   background-color: #000;
+}
+
+.box-link:hover {
+  cursor: pointer;
 }
 
 h2 {
   margin: 50px 0 20px 0;
   font-size: 30px;
-}
-
-.anchor { //for section jump at correct place
-  display: block;
-  height: 47.2px; //same height as header
-  visibility: hidden;
 }
 
 // Project page
@@ -217,11 +271,15 @@ h2 {
   color: #DCDCDC;
 }
 
-.projects-intro h1 {
-  background-color: #1B1B1D; //#191A1C
-  color: #fff;
-  padding: 10px 20px; //0 0 10px 20px
-  font-size: 38px;
+.projects-intro {
+  margin-top: 50px;
+
+  h1 {
+    background-color: #1B1B1D; //#191A1C
+    color: #fff;
+    padding: 10px 20px; //0 0 10px 20px
+    font-size: 38px;
+  }
 }
 
 .gallery {
@@ -233,24 +291,24 @@ h2 {
 }
 
 .detail {
-  width: 48%;
+  width: 45%;
   height: 530px;
   float: right;
-  margin-top: 0.5%;
-
-  p {
-    margin: 3% 4%;
-  }
+  margin: 0.4% 1.5%;
+  line-height: 160%;
 
   a {
-    color: #ff0000;
+    color: #7ebbff;
   }
+}
+
+.project-line {
+  margin: 30px 0;
 }
 
 .project-info {
   background-color: #2f3538; //#363c40
   width: 52%;
-  height: 167px;
   float: left;
   padding: 10px 0;
 
@@ -280,9 +338,12 @@ footer {
   background-color: #000;
   color: #fff;
   height: 300px;
-  margin-top: 50px;
 
   .footer-width {
+    width: 940px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+
     img {
       width: 180px;
       height: 180px;
@@ -296,6 +357,7 @@ footer {
 
       p {
         margin-left: 0;
+        color: #DCDCDC;
       }
     }
 
@@ -303,7 +365,7 @@ footer {
       margin: 20px 0 0 50px;
 
       .footer-link {
-        color: #99D9EA;
+        color: #7ebbff;
         margin-left: 20px;
       }
     }

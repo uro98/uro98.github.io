@@ -29,7 +29,7 @@
   </head>
 
   <body>
-    <!-- load new version of jQuery -->
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- For hide/show -->
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -44,17 +44,15 @@
     <header class="site-header">
       <div class="site-nav">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="uro98.github.io">HOME</a></li>
+          <li><a href="uro98.github.io/#about">ABOUT</a></li>
+          <li><a href="uro98.github.io/#projects">PROJECTS</a></li>
+          <li onclick="scroll('contact')"><a>CONTACT</a></li>
         </ul>
       </div>
     </header>
 
     <main class="project-main">
-      <!-- For jumping to Projects without nav bar blocking it -->
-      <span class="anchor" id="projects"></span>
-
       <div class="projects-intro">
         <h1><em>Bohred Atoms</em></h1>
       </div>
@@ -71,8 +69,19 @@
 
       <div class="detail">
         <p>These atoms are so bohred they can’t take it anymore!</p>
-        <p>Bohred Atoms is a local multiplayer 2D shooter game where each player shoots the other atom’s electrons with their nuclear bullets to destroy them.</p>
-        <p>It can be played online or downloaded to Windows <a href="https://uro.itch.io/bohred-atoms" target="_blank">here</a>.</p>
+        <p>Bohred Atoms is a local multiplayer 2D shooter game where each player shoots the other player’s electrons with their nuclear bullets to destroy them.</p>
+        <p>You can play it online or download it to Windows <a href="https://uro.itch.io/bohred-atoms" target="_blank">here</a>.</p>
+        <hr class="line project-line" />
+        <p>This game was the first game I finished that I could call my own. Before that I had only made clones of classic games from tutorials.</p>
+        <p>The game concept was based on the Bohr Model of the atom which was proposed by Danish physicist Niels Bohr.
+           This model represents the atom as a nucleus with electrons orbiting it in circular orbits. I had learned about it in Chemistry
+           class and thought it would be a nice idea to implement in a game.</p>
+        <p>One of the challenges I encountered was making the electrons orbit the nucleus while staying in their orbits when the atom moves.
+           The atoms in my failed attempts literally exploded <i class="fa fa-bomb" aria-hidden="true"></i>. It took me a while to get right but perseverance (and Google) is key.
+           The rest of the game mechanics were comparable to those of classic games like Breakout, Space Invaders and Pong,
+           so I could apply my knowledge from tutorials there.</p>
+        <p>In the end I was pretty happy with how it turned out. The scope was just right for me not to be completely lost yet still
+           learn a lot. I plan to come back to refactor the code and add an AI. But for now, onward to the next project!</p>
       </div>
 
       <div class="project-info">
@@ -95,6 +104,7 @@
           <div class="links">
             <a href="https://www.linkedin.com/in/yujotseng/" class="footer-link" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
             <a href="https://github.com/uro98" class="footer-link" target="_blank"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+            <a href="mailto:yujotseng@gmail.com"  class="footer-link" target="_blank"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
             <a href="https://twitter.com/yujotseng?lang=en" class="footer-link" target="_blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
           </div>
         </div>
