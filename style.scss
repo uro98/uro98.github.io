@@ -73,9 +73,10 @@ p {
 .intro {
   height: 100%;
   width: 100%;
-  background-image: url("assets/img/aurora.jpg");
+  background-image: url("assets/img/night.png");
   background-attachment: fixed;
   background-size: cover;
+  background-position: 50% 92%;
   top: 0;
   display: table;
 
@@ -273,7 +274,7 @@ h2 {
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
   overflow: hidden;
-  background-color: #292e30; //#2a3439 #363c40 #2f3538 #252e33
+  background-color: #292e30;
   color: #DCDCDC;
 }
 
@@ -281,9 +282,9 @@ h2 {
   margin-top: 50px;
 
   h1 {
-    background-color: #1B1B1D; //#191A1C
+    background-color: #1B1B1D;
     color: #fff;
-    padding: 10px 20px; //0 0 10px 20px
+    padding: 10px 20px;
     font-size: 38px;
   }
 }
@@ -313,7 +314,7 @@ h2 {
 }
 
 .project-info {
-  background-color: #2f3538; //#363c40
+  background-color: #2f3538;
   width: 52%;
   float: left;
   padding: 10px 0;
