@@ -26,33 +26,52 @@ p {
   width: 100%;
   opacity: 0.88;
   z-index: 2;
-}
 
-.site-nav {
-  float: right;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  margin-right: 60px;
+  .logo-name {
+    float: left;
+    width: 160px;
+    vertical-align: middle;
+    display: block;
+    padding: 9.4px 30px;
 
-  ul {
-    list-style: none;
-    display: flex;
+    img {
+      height: 31.2px;
+      width: 31.2px;
+      float: left;
+    }
+    h3 {
+      font-family: "Allura", cursive;
+      color: #7ebbff;
+      font-size: 25px;
+    }
+  }
 
-    li {
-      float: right;
+  .site-nav {
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    margin-right: 60px;
 
-      a {
-        text-decoration: none;
-        color: white;
-        display: block;
-        text-align: center;
-        padding: 14.8px 17px;
-      }
+    ul {
+      list-style: none;
+      display: flex;
 
-      a:hover {
-        color: #7ebbff;
-        background-color: #000;
-        cursor: pointer;
+      li {
+        float: right;
+
+        a {
+          text-decoration: none;
+          color: white;
+          display: block;
+          text-align: center;
+          padding: 14.8px 17px;
+        }
+
+        a:hover {
+          color: #7ebbff;
+          background-color: #000;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -154,6 +173,13 @@ p {
   h2 {
     margin-top: 0;
     color: #fff;
+  }
+
+  img {
+    height: 40.8px;
+    width: 40.8px;
+    vertical-align: middle;
+    float: left;
   }
 
   p {
@@ -342,6 +368,10 @@ h2 {
 
 // Footer
 footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/img/night.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 92%;
   background-color: #000;
   color: #fff;
   height: 300px;
@@ -352,10 +382,10 @@ footer {
     font-family: 'Open Sans', sans-serif;
 
     img {
-      width: 180px;
-      height: 180px;
+      width: 220px;
+      height: 220px;
       float: left;
-      margin: 50px 165px;
+      margin: 34px 145px;
     }
 
     .info {
@@ -369,11 +399,11 @@ footer {
     }
 
     .links {
-      margin: 20px 0 0 50px;
+      margin-top: 20px;
 
       .footer-link {
         color: #7ebbff;
-        margin-left: 20px;
+        margin-right: 20px;
       }
     }
   }
