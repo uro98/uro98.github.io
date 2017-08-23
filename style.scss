@@ -29,10 +29,11 @@ p {
 
   .logo-name {
     float: left;
-    width: 160px;
+    width: 143px;
     vertical-align: middle;
     display: block;
-    padding: 9.4px 30px;
+    margin: 0 20px;
+    padding: 9.4px 10px;
 
     img {
       height: 31.2px;
@@ -44,6 +45,10 @@ p {
       color: #7ebbff;
       font-size: 25px;
     }
+  }
+
+  .logo-name:hover {
+    cursor: pointer;
   }
 
   .site-nav {
