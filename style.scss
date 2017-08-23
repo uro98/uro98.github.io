@@ -18,13 +18,13 @@ p {
 
 // Navigation bar: fixed, transparent
 .site-header {
-  background: #171618;
   height: 50px;
+  background-color: rgba(23, 22, 24, 0.92);
   color: #fff;
   position: fixed;
   right: 0;
   width: 100%;
-  opacity: 0.92;
+  transition: background-color 0.3s ease-out;
   z-index: 2;
 
   .logo-name {
@@ -64,7 +64,7 @@ p {
       li {
         float: right;
 
-        a {
+        .nav-links {
           text-decoration: none;
           color: white;
           display: block;
@@ -72,14 +72,21 @@ p {
           padding: 14.8px 17px;
         }
 
-        a:hover {
+        .nav-links:hover {
           color: #7ebbff;
-          background-color: #000;
           cursor: pointer;
+        }
+
+        .hover-bg:hover {
+          background-color: #000;
         }
       }
     }
   }
+}
+
+.main-header {
+  background-color: rgba(23, 22, 24, 0);
 }
 
 @media (max-width: 300px) {
