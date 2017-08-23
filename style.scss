@@ -24,7 +24,7 @@ p {
   position: fixed;
   right: 0;
   width: 100%;
-  opacity: 0.88;
+  opacity: 0.92;
   z-index: 2;
 
   .logo-name {
@@ -111,7 +111,7 @@ p {
       h1 {
         font-size: 180px;
         font-family: "Allura", cursive;
-        color: #7ebbff; //99D9EA
+        color: #7ebbff;
         z-index: 0;
       }
 
@@ -184,6 +184,26 @@ p {
 
   p {
     line-height: 160%;
+
+    a {
+      color: #7ebbff;
+    }
+
+    a:hover {
+      cursor: pointer;
+    }
+  }
+
+  #gamesList {
+    margin: 30px 20px 12px 20px;
+    border: solid;
+    border-width: 2px;
+    display: none;
+
+    p {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
   }
 }
 
@@ -300,15 +320,16 @@ h2 {
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
   overflow: hidden;
-  background-color: #292e30;
-  color: #DCDCDC;
+  background-color: #DCDCDC;
+  color: #292e30;
 }
 
 .projects-intro {
-  margin-top: 50px;
+  width: 880px;
+  margin: 50px auto 0 auto;
 
   h1 {
-    background-color: #1B1B1D;
+    background-color: #1B1B1D; //#1B1B1D
     color: #fff;
     padding: 10px 20px;
     font-size: 38px;
@@ -317,42 +338,28 @@ h2 {
 
 .gallery {
   padding: 1% 0;
-  width: 52%;
-  height: 530px;
+  max-width: 880px;
+  height: 550px;
   background: #000;
-  float: left;
-}
-
-.detail {
-  width: 45%;
-  height: 530px;
-  float: right;
-  margin: 0.4% 1.5%;
-  line-height: 160%;
-
-  a {
-    color: #7ebbff;
-  }
-}
-
-.project-line {
-  margin: 30px 0;
+  margin: 0 auto;
 }
 
 .project-info {
   background-color: #2f3538;
-  width: 52%;
-  float: left;
+  max-width: 880px;
   padding: 10px 0;
+  margin: 0 auto;
+  overflow: hidden;
 
   ul {
     width: 31%;
     list-style: none;
-    margin: 10px 1.8%;
+    margin: 10px 2%;
     float: left;
 
     li {
-      margin: 10px 0;
+      margin: 12px 0;
+      color: #DCDCDC;
 
       strong {
         color: #7ebbff;
@@ -366,6 +373,22 @@ h2 {
   }
 }
 
+.detail {
+  max-width: 880px;
+  margin: 30px auto 100px auto;
+  line-height: 160%;
+
+  a {
+    color: #7ebbff;
+    text-decoration: none;
+  }
+}
+
+.project-line {
+  margin: 30px 0;
+  border-color: #2f3538;
+}
+
 // Footer
 footer {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/img/night.png");
@@ -374,37 +397,51 @@ footer {
   background-position: 50% 92%;
   background-color: #000;
   color: #fff;
-  height: 300px;
+  height: 320px;
 
   .footer-width {
-    width: 940px;
+    width: 880px;
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
 
     img {
-      width: 220px;
-      height: 220px;
+      width: 200px;
+      height: 200px;
       float: left;
-      margin: 34px 145px;
+      margin: 49px 10px 5px 125px;
     }
 
     .info {
       display: inline-block;
-      margin-top: 10px;
+      width: 545px;
+      height: 254px;
+      text-align: center;
+
+      h2 {
+        margin-top: 70px;
+      }
 
       p {
-        margin-left: 0;
+        margin-top: 35px;
         color: #DCDCDC;
+      }
+
+      .links {
+        margin-top: 20px;
+
+        .footer-link {
+          color: #7ebbff;
+        }
+
+        .footer-link + .footer-link {
+          margin-left: 20px;
+        }
       }
     }
 
-    .links {
-      margin-top: 20px;
-
-      .footer-link {
-        color: #7ebbff;
-        margin-right: 20px;
-      }
+    .copyright {
+      text-align: center;
+      color: #DCDCDC;
     }
   }
 }
