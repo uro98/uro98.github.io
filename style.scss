@@ -29,21 +29,21 @@ p {
 
   .logo-name {
     float: left;
-    width: 143px;
-    vertical-align: middle;
-    display: block;
     margin: 0 20px;
     padding: 9.4px 10px;
+    overflow: auto;
 
     img {
       height: 31.2px;
       width: 31.2px;
       float: left;
     }
+
     h3 {
       font-family: "Allura", cursive;
       color: #7ebbff;
       font-size: 25px;
+      display: inline-block;
     }
   }
 

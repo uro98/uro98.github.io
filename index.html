@@ -39,13 +39,16 @@
 
     <!-- Navigation bar -->
     <header class="site-header main-header">
-      <div class="logo-name" onclick="$(window).scrollTo(0, 500);"><img src="assets/img/Catstronomer.svg"/><h3>&nbsp;Yu Jo Tseng</h3></div>
+      <div class="logo-name" onclick="$(window).scrollTo(0, 500);">
+        <img src="assets/img/Catstronomer.svg"/>
+        <h3>&nbsp;Yu Jo Tseng</h3>
+      </div>
       <div class="site-nav">
         <ul>
           <li onclick="$(window).scrollTo(0, 500);"><a class="nav-links main-nav-links">HOME</a></li>
-          <li onclick="scroll('about')"><a class="nav-links main-nav-links">ABOUT</a></li>
-          <li onclick="scroll('projects')"><a class="nav-links main-nav-links">PROJECTS</a></li>
-          <li onclick="scroll('contact')"><a class="nav-links main-nav-links">CONTACT</a></li>
+          <li onclick="scrollToId('about')"><a class="nav-links main-nav-links">ABOUT</a></li>
+          <li onclick="scrollToId('projects')"><a class="nav-links main-nav-links">PROJECTS</a></li>
+          <li onclick="scrollToId('contact')"><a class="nav-links main-nav-links">CONTACT</a></li>
         </ul>
       </div>
     </header>

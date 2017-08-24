@@ -21,7 +21,7 @@ $(document).ready(function() {
   })
 })
 
-function scroll(id) {
+function scrollToId(id) {
   //scroll to element with id
   $(window).scrollTo(document.getElementById(id), 500);
 }
