@@ -12,9 +12,7 @@ p {
   margin: 16px 0;
 }
 
-// to do: responsiveness, section highlight
-
-// change container height to add more rows of boxes
+// added Bootstrap, has font weight conflicts
 
 // Navigation bar: fixed, transparent
 .site-header {
@@ -69,7 +67,7 @@ p {
           color: white;
           display: block;
           text-align: center;
-          padding: 14.8px 17px;
+          padding: 14.8px 17px; // 13.8px with Bootstrap
         }
 
         .nav-links:hover {
@@ -108,7 +106,6 @@ p {
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 92%;
-  top: 0;
   display: table;
 
   .inner {
@@ -124,7 +121,6 @@ p {
         font-size: 180px;
         font-family: "Allura", cursive;
         color: #7ebbff;
-        z-index: 0;
       }
 
       p {
@@ -184,6 +180,7 @@ p {
 
   h2 {
     margin-top: 0;
+    margin-bottom: 20px;
     color: #fff;
   }
 
@@ -244,7 +241,7 @@ p {
   }
 }
 
-.container {
+.box-container {
   width: 880px;
   height: 525px;
   margin: 0 auto;
@@ -454,6 +451,7 @@ footer {
     .copyright {
       text-align: center;
       color: #DCDCDC;
+      margin-top: 16px;
     }
   }
 }
