@@ -15,88 +15,127 @@ p {
 // added Bootstrap, has font weight conflicts
 
 // Navigation bar: fixed, transparent
-.site-header {
-  height: 50px;
-  background-color: rgba(23, 22, 24, 0.92);
-  color: #fff;
-  position: fixed;
-  right: 0;
-  width: 100%;
+.navbar {
+  padding: 0 1% 0 2%;
+  background-color: rgba(23, 22, 24, 0);
   transition: background-color 0.3s ease-out;
-  z-index: 2;
 
-  .logo-name {
-    float: left;
-    margin: 0 20px;
-    padding: 9.4px 10px;
-    overflow: auto;
-
-    img {
-      height: 31.2px;
-      width: 31.2px;
-      float: left;
-    }
-
-    h3 {
-      font-family: "Allura", cursive;
-      color: #7ebbff;
-      font-size: 25px;
-      display: inline-block;
-    }
+  .logo {
+    font-family: "Allura", cursive;
+    color: #7ebbff;
+    font-size: 25px;
   }
 
-  .logo-name:hover {
-    cursor: pointer;
+  .logo:hover {
+    color: #7ebbff;
   }
 
-  .site-nav {
-    float: right;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    margin-right: 60px;
+  .navbar-toggler {
+    color: #fff;
+  }
 
-    ul {
-      list-style: none;
-      display: flex;
+  .collapse .nav {
+    margin-right: 50px;
 
-      li {
-        float: right;
+    .nav-item {
+      .nav-link {
+        padding: 13px 17px;
+        color: #fff;
+      }
 
-        .nav-links {
-          text-decoration: none;
-          color: white;
-          display: block;
-          text-align: center;
-          padding: 14.8px 17px; // 13.8px with Bootstrap
-        }
+      .nav-link:hover {
+        color: #7ebbff;
+      }
 
-        .nav-links:hover {
-          color: #7ebbff;
-          cursor: pointer;
-        }
-
-        .hover-bg:hover {
-          background-color: #000;
-        }
+      .hover-bg:hover {
+        background-color: #000;
       }
     }
   }
 }
 
-.main-header {
-  background-color: rgba(23, 22, 24, 0);
-}
+// .site-header {
+//   height: 50px;
+//   background-color: rgba(23, 22, 24, 0.92);
+//   color: #fff;
+//   position: fixed;
+//   right: 0;
+//   width: 100%;
+//   transition: background-color 0.3s ease-out;
+//   z-index: 2;
+//
+//   .logo-name {
+//     float: left;
+//     margin: 0 20px;
+//     padding: 9.4px 10px;
+//     overflow: auto;
+//
+//     img {
+//       height: 31.2px;
+//       width: 31.2px;
+//       float: left;
+//     }
+//
+//     h3 {
+//       font-family: "Allura", cursive;
+//       color: #7ebbff;
+//       font-size: 25px;
+//       display: inline-block;
+//     }
+//   }
+//
+//   .logo-name:hover {
+//     cursor: pointer;
+//   }
+//
+//   .site-nav {
+//     float: right;
+//     font-family: 'Open Sans', sans-serif;
+//     font-size: 15px;
+//     margin-right: 60px;
+//
+//     ul {
+//       list-style: none;
+//       display: flex;
+//
+//       li {
+//         float: right;
+//
+//         .nav-links {
+//           text-decoration: none;
+//           color: white;
+//           display: block;
+//           text-align: center;
+//           padding: 14.8px 17px; // 13.8px with Bootstrap
+//         }
+//
+//         .nav-links:hover {
+//           color: #7ebbff;
+//           cursor: pointer;
+//         }
+//
+//         .hover-bg:hover {
+//           background-color: #000;
+//         }
+//       }
+//     }
+//   }
+// }
 
-@media (max-width: 300px) {
-  .site-nav ul {
-    width: 100%;
-    flex-direction: column;
+// .main-header {
+//   background-color: rgba(23, 22, 24, 0);
+// }
 
-    li {
-      display: block;
-    }
-  }
-}
+// @media (max-width: 300px) {
+//   .site-nav ul {
+//     width: 100%;
+//     flex-direction: column;
+//
+//     li {
+//       display: block;
+//     }
+//   }
+// }
 
 // Fullscreen landing page
 .intro {
