@@ -222,7 +222,7 @@ p {
 @media (max-width: 730px) {
   .jumbotron .content {
     h1 {
-      font-size: 60px;
+      font-size: 65px;
     }
 
     p {
@@ -230,7 +230,7 @@ p {
     }
 
     .hobbies {
-      font-size: 12px;
+      font-size: 13px;
       margin-top: 10px;
       margin-bottom: 70px;
     }
@@ -240,25 +240,21 @@ p {
 // About
 .section {
   padding-top: 100px;
+  padding-bottom: 84px;
 }
 
 .about {
   color: #DCDCDC;
-}
-
-#about {
   background-color: #2a3439;
 }
 
 .about-text {
-  width: 880px;
-  margin: 0 auto;
-  padding-bottom: 84px;
-
   h2 {
     margin-top: 0;
     margin-bottom: 20px;
+    padding: 4px 0 4px 0;
     color: #fff;
+    font-weight: bold;
   }
 
   img {
@@ -272,7 +268,7 @@ p {
     line-height: 160%;
 
     a {
-      color: #7ebbff;
+      color: #7ebbff !important;
     }
 
     a:hover {
