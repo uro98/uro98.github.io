@@ -24,6 +24,7 @@ p {
     font-family: "Allura", cursive;
     color: #7ebbff;
     font-size: 25px;
+    font-weight: bold;
   }
 
   .logo:hover {
@@ -138,61 +139,98 @@ p {
 // }
 
 // Fullscreen landing page
-.intro {
+.jumbotron {
   height: 100%;
-  width: 100%;
+  margin-bottom: 0;
   background-image: url("assets/img/night.png");
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 92%;
-  display: table;
+  display: flex;
+  align-items: center;
+  color: #fff;
 
-  .inner {
-    display: table-cell;
-    vertical-align: middle;
+  h1 {
+    font-size: 180px;
+    font-family: "Allura", cursive;
+    color: #7ebbff;
+    font-weight: bold;
+  }
 
-    .content {
-      width: 65%;
-      margin: 0 auto;
-      text-align: center;
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+  }
 
-      h1 {
-        font-size: 180px;
-        font-family: "Allura", cursive;
-        color: #7ebbff;
-      }
-
-      p {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 18px;
-        color: #fff;
-      }
-
-      .hobbies {
-        margin-top: -40px;
-        margin-bottom: 100px;
-      }
-    }
+  .hobbies {
+    margin-top: -35px;
+    margin-bottom: 80px;
   }
 }
+
+
+// .intro {
+//   height: 100%;
+//   width: 100%;
+//   background-image: url("assets/img/night.png");
+//   background-attachment: fixed;
+//   background-size: cover;
+//   background-position: 50% 92%;
+//   display: table;
+//
+//   .inner {
+//     display: table-cell;
+//     vertical-align: middle;
+//
+//     .content {
+//       width: 70%;
+//       margin: 0 auto;
+//       text-align: center;
+//
+//       h1 {
+//         font-size: 180px;
+//         font-family: "Allura", cursive;
+//         color: #7ebbff;
+//       }
+//
+//       p {
+//         font-family: 'Open Sans', sans-serif;
+//         font-size: 18px;
+//         color: #fff;
+//       }
+//
+//       .hobbies {
+//         margin-top: -40px;
+//         margin-bottom: 100px;
+//       }
+//     }
+//   }
+// }
 
 @media (max-width: 1200px) {
-  .intro .inner .content h1 {
-    font-size: 130px;
-  }
-}
-
-@media (max-width: 780px) {
-  .intro .inner .content {
+  .jumbotron .content {
     h1 {
-      font-size: 50px;
+      font-size: 120px;
     }
 
     p {
-      font-size: 12px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 730px) {
+  .jumbotron .content {
+    h1 {
+      font-size: 60px;
+    }
+
+    p {
+      font-size: 16px;
     }
 
     .hobbies {
+      font-size: 12px;
       margin-top: 10px;
       margin-bottom: 70px;
     }
