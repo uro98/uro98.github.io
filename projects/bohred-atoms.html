@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Yu Jo Tseng</title>
-    <link rel="stylesheet" href="../style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura|Open+Sans">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.min.css">
 
     <!-- Site icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png">
@@ -30,8 +31,9 @@
   <body>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- For hide/show -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <!-- For jump-scrolling -->
     <script src="../assets/jquery.scrollTo-2.1.2/jquery.scrollTo.min.js"></script>
     <!-- For Galleria -->
@@ -40,21 +42,31 @@
     <script src="../js/main.js"></script>
 
     <!-- Navigation bar -->
-    <header class="site-header">
-      <div class="logo-name" onclick="location.href='http://yujotseng.com';"><img src="../assets/img/Catstronomer.svg"/><h3>&nbsp;Yu Jo Tseng</h3></div>
-      <div class="site-nav">
-        <ul>
-          <li><a class="nav-links hover-bg" href="http://yujotseng.com">HOME</a></li>
-          <li><a class="nav-links hover-bg" href="http://yujotseng.com/#about">ABOUT</a></li>
-          <li><a class="nav-links hover-bg" href="http://yujotseng.com/#projects">PROJECTS</a></li>
-          <li onclick="scrollToId('contact')"><a class="nav-links hover-bg">CONTACT</a></li>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <a class="navbar-brand logo" href="http://yujotseng.com">
+        <img src="../assets/img/Catstronomer.svg" width="31.2" height="31.2" class="d-inline-block" alt="">
+        Yu Jo Tseng
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="siteNav">
+        <ul class="nav navbar-nav navbar-right ml-auto">
+          <li class="nav-item"><a class="nav-link hover-bg" href="http://yujotseng.com">HOME</a></li>
+          <li class="nav-item"><a class="nav-link hover-bg" href="http://yujotseng.com/#about">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link hover-bg" href="http://yujotseng.com/#projects">PROJECTS</a></li>
+          <li class="nav-item"><a class="nav-link hover-bg" href="#" onclick="scrollToId('contact')">CONTACT</a></li>
         </ul>
       </div>
-    </header>
+    </nav>
 
-    <main class="project-main">
-      <div class="projects-intro">
-        <h1><em>Bohred Atoms</em></h1>
+    <main class="container-fluid project-main">
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <div class="projects-intro">
+            <h1><em>Bohred Atoms</em></h1>
+          </div>
+        </div>
       </div>
 
       <div class="gallery">

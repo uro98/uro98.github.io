@@ -2,21 +2,15 @@ var showing = false;
 var transparent = true; //navbar transparency
 
 $(document).ready(function() {
-  if(transparent == false) {
-    $('.navbar').css('background', 'rgba(23, 22, 24, 0.92)');
-  }
-
   $(window).scroll(function() {
     //if scrolled window at least 10px, make navbar bg not transparent
     if($(window).scrollTop() < 10) {
-      $('.navbar').css('background', 'rgba(23, 22, 24, 0)');
-      $('.nav-link').removeClass('hover-bg');
-      transparent = true;
+      $('.main-navbar').css('background', 'rgba(23, 22, 24, 0)');
+      $('.main-nav-link').removeClass('hover-bg');
     } else {
-      $('.navbar').css('background', 'rgba(23, 22, 24, 0.92)');
+      $('.main-navbar').css('background', 'rgba(23, 22, 24, 0.92)');
       //make nav bar links bg on hover not transparent
-      $('.nav-link').addClass('hover-bg');
-      transparent = false;
+      $('.main-nav-link').addClass('hover-bg');
     }
   })
 })

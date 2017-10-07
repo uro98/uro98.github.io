@@ -12,10 +12,10 @@ p {
   margin: 16px 0;
 }
 
-// Navigation bar: fixed, transparent
+// Navigation bar
 .navbar {
   padding: 0 1% 0 2%;
-  background-color: rgba(23, 22, 24, 0);
+  background-color: rgba(23, 22, 24, 0.92);
   transition: background-color 0.3s ease-out;
 
   .logo {
@@ -53,6 +53,10 @@ p {
       }
     }
   }
+}
+
+.main-navbar {
+  background-color: rgba(23, 22, 24, 0);
 }
 
 // Fullscreen landing page
@@ -238,8 +242,6 @@ p {
 
 // Project page
 .project-main {
-  width: 100%;
-  margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
   overflow: hidden;
   background-color: #DCDCDC;
@@ -247,11 +249,10 @@ p {
 }
 
 .projects-intro {
-  width: 880px;
-  margin: 50px auto 0 auto;
+  margin-top: 47.2px;
+  background-color: #1B1B1D;
 
   h1 {
-    background-color: #1B1B1D; //#1B1B1D
     color: #fff;
     padding: 10px 20px;
     font-size: 38px;
@@ -309,6 +310,12 @@ p {
 .project-line {
   margin: 30px 0;
   border-color: #2f3538;
+}
+
+@media only screen and (min-width: 992px) {
+  .projects-intro {
+    margin-top: 48.4px;
+  }
 }
 
 // Footer
