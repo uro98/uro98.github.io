@@ -52,10 +52,10 @@
       </button>
       <div class="collapse navbar-collapse" id="siteNav">
         <ul class="nav navbar-nav navbar-right ml-auto">
-          <li class="nav-item"><a class="nav-link main-nav-links" href="#" onclick="$(window).scrollTo(0, 500);">HOME</a></li>
-          <li class="nav-item"><a class="nav-link main-nav-links" href="#" onclick="scrollToId('about')">ABOUT</a></li>
-          <li class="nav-item"><a class="nav-link main-nav-links" href="#" onclick="scrollToId('projects')">PROJECTS</a></li>
-          <li class="nav-item"><a class="nav-link main-nav-links" href="#" onclick="scrollToId('contact')">CONTACT</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="$(window).scrollTo(0, 500);">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="scrollToId('about')">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="scrollToId('projects')">PROJECTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="scrollToId('contact')">CONTACT</a></li>
         </ul>
       </div>
     </nav>
@@ -139,13 +139,47 @@
       </div> -->
 
       <!-- Projects section -->
-      <div id="projects" class="projects section">
+      <div class="container-fluid projects section" id="projects">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <h2>Projects</h2>
+            <p class="current">Currently I am working on a FPS game in Unity and an Android app.</p>
+
+            <!-- Portfolio -->
+            <div class="box text-box" onclick="location.href='https://github.com/uro98/expense-logger';">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-5 middle">
+                    <p class="title">Expense Logger</p>
+                    <hr class="line" />
+                    <p class="description">An Android App for Financial Management (work in progress)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box" onclick="location.href='projects/bohred-atoms.html';">
+              <img src="assets/img/bohred-atoms-screenshot.png" class="image bohred-atoms-image"/>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-5 middle">
+                    <p class="title">Bohred Atoms<br />
+                    <hr class="line" />
+                    <p class="description">A Local Multiplayer 2D Shooter Game</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div id="projects" class="projects section">
         <div>
           <h2>Projects</h2>
           <p class="current">Currently I am working on a FPS game in Unity and an Android app.</p>
         </div>
 
-        <!-- Portfolio -->
+
         <div class="box-container">
           <div class="box text-box box-link" onclick="location.href='https://github.com/uro98/expense-logger';">
             <div class="middle pointer">
@@ -174,9 +208,9 @@
             <div class="middle">
               <p class="title">The void</p>
             </div>
-          </div>-->
+          </div>--
         </div>
-      </div>
+      </div> -->
     </main>
 
     <footer>
