@@ -40,6 +40,8 @@ p {
       .nav-link {
         padding: 13px 17px;
         color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
       }
 
       .nav-link:hover {
@@ -317,54 +319,49 @@ footer {
   background-position: 50% 92%;
   background-color: #000;
   color: #fff;
-  height: 320px;
+  font-family: 'Open Sans', sans-serif;
 
-  .footer-width {
-    width: 880px;
-    margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+  img {
+    width: 200px;
+    height: 200px;
+  }
 
-    img {
-      width: 200px;
-      height: 200px;
-      float: left;
-      margin: 49px 10px 5px 125px;
+  .info {
+    padding-top: 70px;
+    padding-bottom: 50px;
+
+    h2 {
+        font-weight: bold;
+        margin-bottom: 35px;
     }
 
-    .info {
-      display: inline-block;
-      width: 545px;
-      height: 254px;
-      text-align: center;
-
-      h2 {
-        margin-top: 70px;
-      }
-
-      p {
-        margin-top: 35px;
-        color: #DCDCDC;
-      }
-
-      .links {
-        margin-top: 20px;
-
-        .footer-link {
-          color: #7ebbff;
-        }
-
-        .footer-link + .footer-link {
-          margin-left: 20px;
-        }
-      }
-    }
-
-    .copyright {
-      text-align: center;
+    p {
       color: #DCDCDC;
-      margin-top: 16px;
     }
   }
+
+  .links {
+    margin-top: 20px;
+
+    .footer-link {
+      color: #7ebbff;
+    }
+
+    .footer-link + .footer-link {
+      margin-left: 20px;
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    color: #DCDCDC;
+    margin-bottom: 20px;
+  }
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
 }
 
 .fa:hover {
