@@ -240,6 +240,10 @@ p {
   object-position: 50% 69%;
 }
 
+.expense-logger-image {
+  object-position: 50% 10%;
+}
+
 // Project page
 .project-main {
   font-family: 'Open Sans', sans-serif;
@@ -295,6 +299,40 @@ p {
   a {
     color: #7ebbff;
     text-decoration: none;
+  }
+
+  ul li {
+    list-style-position: inside;
+  }
+}
+
+// Expense Logger
+.icon {
+  width: 120px;
+  height: 120px;
+}
+
+.install {
+  color: #DCDCDC;
+
+  h4 {
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+
+  .install-button-wrapper {
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    .install-expense-logger {
+      border-color: #00AA8D;
+      background-color: #00AA8D;
+      color: #fff;
+    }
+
+    .install-expense-logger:active, .install-expense-logger:focus {
+      box-shadow: none;
+    }
   }
 }
 
