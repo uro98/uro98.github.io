@@ -8,7 +8,7 @@ $(document).ready(function() {
       $('.main-navbar').css('background', 'rgba(23, 22, 24, 0)');
       $('.main-nav-link').removeClass('hover-bg');
     } else {
-      $('.main-navbar').css('background', 'rgba(23, 22, 24, 0.92)');
+      $('.main-navbar').css('background', 'rgba(23, 22, 24, 1)');
       //make nav bar links bg on hover not transparent
       $('.main-nav-link').addClass('hover-bg');
     }
