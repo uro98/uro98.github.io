@@ -66,8 +66,8 @@ p {
   margin-bottom: 0;
   background-image: url("assets/img/night.png");
   background-attachment: fixed;
-  background-size: cover;
-  background-position: 50% 92%;
+  background-size: cover + 1px;
+  background-position: 55% 92%;
   display: flex;
   align-items: center;
   color: #fff;

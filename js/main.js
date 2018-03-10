@@ -1,22 +1,31 @@
 var showing = false;
-var transparent = true; //navbar transparency
+var transparent = true; // Navbar transparency
 
 $(document).ready(function() {
   $(window).scroll(function() {
-    //if scrolled window at least 10px, make navbar bg not transparent
+    // If scrolled window at least 10px, make navbar bg not transparent
     if($(window).scrollTop() < 10) {
       $('.main-navbar').css('background', 'rgba(23, 22, 24, 0)');
       $('.main-nav-link').removeClass('hover-bg');
     } else {
       $('.main-navbar').css('background', 'rgba(23, 22, 24, 1)');
-      //make nav bar links bg on hover not transparent
+      // Make nav bar links bg on hover not transparent
       $('.main-nav-link').addClass('hover-bg');
     }
+  })
+  // Move backgroun based on cursor position
+  var moveAmount = 5;
+  $(".jumbotron").mousemove(function(e){
+    var height = $(window).height();
+    var width = $(window).width();
+    var newX = 55 + e.pageX / width * moveAmount;
+    var newY = 92 + e.pageY / height * moveAmount;
+    $(".jumbotron").css("background-position", newX + "% " + newY + "%");
   })
 })
 
 function scrollToId(id) {
-  //scroll to element with id
+  // Scroll to element with id
   $(window).scrollTo(document.getElementById(id), 500);
 }
 
@@ -28,7 +37,7 @@ function showSection(section) {
   $("#".concat(section)).slideDown(200).css('opacity', 1);
 }
 
-//toggle show/hide section
+// Toggle show/hide section
 function toggleSection(section) {
   if (showing == true) {
     hideSection(section);
