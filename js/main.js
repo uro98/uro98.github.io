@@ -13,8 +13,8 @@ $(document).ready(function() {
       $('.main-nav-link').addClass('hover-bg');
     }
   })
-  // Move backgroun based on cursor position
-  var moveAmount = 5;
+  // Move background based on cursor position
+  var moveAmount = 4;
   $(".jumbotron").mousemove(function(e){
     var height = $(window).height();
     var width = $(window).width();
