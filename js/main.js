@@ -13,15 +13,15 @@ $(document).ready(function() {
       $('.main-nav-link').addClass('hover-bg');
     }
   })
-  // Move background based on cursor position
-  var moveAmount = 4;
-  $(".jumbotron").mousemove(function(e){
-    var height = $(window).height();
-    var width = $(window).width();
-    var newX = 55 + e.pageX / width * moveAmount;
-    var newY = 92 + e.pageY / height * moveAmount;
-    $(".jumbotron").css("background-position", newX + "% " + newY + "%");
-  })
+  // Move background based on cursor position (for night.png)
+  // var moveAmount = 4;
+  // $(".jumbotron").mousemove(function(e){
+  //   var height = $(window).height();
+  //   var width = $(window).width();
+  //   var newX = 55 + e.pageX / width * moveAmount;
+  //   var newY = 92 + e.pageY / height * moveAmount;
+  //   $(".jumbotron").css("background-position", newX + "% " + newY + "%");
+  // })
 })
 
 function scrollToId(id) {
