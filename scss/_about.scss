@@ -1,0 +1,37 @@
+// main: style.scss
+
+// About
+.about {
+  color: #DCDCDC;
+  background-color: #2a3439;
+
+  .about-text {
+    h2 {
+      padding: 4px 0 4px 0;
+      color: #fff;
+    }
+
+    img {
+      height: 40.8px;
+      width: 40.8px;
+      vertical-align: middle;
+      float: left;
+    }
+
+    p {
+      line-height: 160%;
+    }
+
+    #gamesList {
+      margin: 30px 20px 12px 20px;
+      border: solid;
+      border-width: 2px;
+      display: none;
+
+      p {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
+  }
+}

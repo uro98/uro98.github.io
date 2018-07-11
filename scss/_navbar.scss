@@ -1,0 +1,49 @@
+// main: style.scss
+
+// Navigation bar
+.navbar {
+  padding: 0 1% 0 2%;
+  background-color: rgba(23, 22, 24, 1);
+  transition: background-color 0.3s ease-out;
+
+  .logo {
+    font-family: "Offside", cursive; // For neon
+    color: #7ebbff;
+    font-size: 18px; // 25px for Allura
+    //font-weight: bold; // For Allura
+  }
+
+  .logo:hover {
+    color: #7ebbff;
+  }
+
+  .navbar-toggler {
+    color: #fff;
+  }
+
+  .collapse .nav {
+    margin-right: 50px;
+
+    .nav-item {
+      .nav-link {
+        padding: 14px 17px;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        transition: color 0.2s ease-out, background-color 0.2s ease-out;
+      }
+
+      .nav-link:hover {
+        color: #7ebbff;
+      }
+
+      .hover-bg:hover {
+        background-color: #000;
+      }
+    }
+  }
+}
+
+.main-navbar {
+  background-color: rgba(23, 22, 24, 0);
+}

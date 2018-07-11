@@ -1,0 +1,45 @@
+// General
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+p {
+  margin: 16px 0;
+}
+
+.blue-link {
+  color: #7ebbff !important;
+}
+
+.blue-link:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.main {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #DCDCDC;
+
+  .section {
+    padding-top: 100px;
+    padding-bottom: 84px;
+  }
+}
+
+@import 'navbar';
+@import 'landing-page';
+@import 'about';
+@import 'experiences';
+@import 'projects';
+@import 'projects-page';
+@import 'footer';

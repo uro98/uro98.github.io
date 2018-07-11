@@ -1,0 +1,64 @@
+// main: style.scss
+
+// Fullscreen landing page
+.jumbotron {
+  height: 100%;
+  margin-bottom: 0;
+  //background-image: url("assets/img/night.png"); // For night.png
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/img/taipei.jpg");
+  background-attachment: fixed;
+  //background-size: cover + 1px; // For night.png
+  background-size: cover; // For taipei.jpg
+  background-position: 55% 92%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  h1 {
+    font-size: 110px; // 180px for Allura
+    font-family: "Offside", cursive; // For neon
+    color: #fff;
+    //font-weight: bold; // For Allura
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fffb1a, 0 0 20px #fffb1a, 0 0 35px #fffb1a, 0 0 40px #fffb1a;
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+  }
+
+  .hobbies {
+    //margin-top: -35px; // For night.png
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .jumbotron .content {
+    h1 {
+      font-size: 120px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 730px) {
+  .jumbotron .content {
+    h1 {
+      font-size: 65px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .hobbies {
+      font-size: 13px;
+      margin-top: 10px;
+      margin-bottom: 70px;
+    }
+  }
+}
