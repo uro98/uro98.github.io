@@ -26,6 +26,15 @@ p {
   text-decoration: none;
 }
 
+.dark-blue-link {
+  color: #2e92ff !important;
+}
+
+.dark-blue-link:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .main {
   font-family: 'Open Sans', sans-serif;
   background-color: #DCDCDC;
@@ -33,6 +42,18 @@ p {
   .section {
     padding-top: 100px;
     padding-bottom: 84px;
+  }
+}
+
+.pop-out-box {
+  margin: 30px 20px 12px 20px;
+  border: solid;
+  border-width: 2px;
+  display: none;
+
+  p {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
