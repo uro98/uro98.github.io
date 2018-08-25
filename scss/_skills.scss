@@ -1,0 +1,23 @@
+// main: style.scss
+
+// Technical Skills
+.skills {
+  padding-top: 40px !important;
+  padding-bottom: 24px !important;
+
+  .horizontal-list {
+    margin: 16px 0 0 0;
+    text-align: justify;
+    list-style: none;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  .horizontal-list:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+}
