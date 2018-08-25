@@ -2,13 +2,15 @@
 
 // Technical Skills
 .skills {
-  padding-top: 40px !important;
-  padding-bottom: 24px !important;
+  background-color: #DCDCDC; //F7F7F7
+  padding-top: 30px !important;
+  padding-bottom: 6px !important;
 
   .horizontal-list {
     margin: 16px 0 0 0;
     text-align: justify;
     list-style: none;
+    color: #2a3439;
 
     li {
       display: inline-block;
