@@ -60,6 +60,15 @@ p {
   }
 }
 
+// Sketchfab embeds
+.left-model {
+  margin: 8px 16px 16px 0;
+}
+
+.right-model {
+  margin: 8px 0 16px 16px;
+}
+
 @import 'navbar';
 @import 'landing-page';
 @import 'about';
