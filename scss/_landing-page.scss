@@ -22,41 +22,84 @@
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fffb1a, 0 0 20px #fffb1a, 0 0 35px #fffb1a, 0 0 40px #fffb1a;
   }
 
-  p {
+  p, a {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
   }
 
   .hobbies {
     //margin-top: -35px; // For night.png
-    margin-bottom: 80px;
+    margin-bottom: 50px;
+  }
+}
+
+.more-button {
+  position: absolute;
+  padding-top: 40px;
+  bottom: 40px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+
+  a {
+    font-size: 16px;
+    text-decoration: none;
+    padding-top: 40px;
+    color: #fff;
+    transition: color .3s;
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 24px;
+      height: 24px;
+      margin-left: -12px;
+      border-left: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      transform: rotate(-45deg);
+      box-sizing: border-box;
+      transition: border-color .3s;
+    }
+  }
+}
+
+a:hover {
+  color: #7ebbff;
+
+  span {
+    border-color: #7ebbff;
   }
 }
 
 @media (max-width: 1200px) {
   .jumbotron .content {
     h1 {
-      font-size: 120px;
+      font-size: 80px; // 120px for Allura
     }
 
     p {
       font-size: 16px;
+    }
+
+    .more-button a {
+      font-size: 14px;
     }
   }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 540px) {
   .jumbotron .content {
     h1 {
-      font-size: 65px;
+      font-size: 47px; // 65px for Allura
     }
 
     p {
-      font-size: 16px;
+      font-size: 15px;
     }
 
     .hobbies {
-      font-size: 13px;
+      font-size: 14px;
       margin-top: 10px;
       margin-bottom: 70px;
     }
