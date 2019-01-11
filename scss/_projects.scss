@@ -10,16 +10,27 @@
   }
 
   .portfolio {
-    padding: 0;
+    padding: 0px;
   }
 }
 
 .portfolio-col {
-  padding: 15px;
+  padding: 0px 15px 0px 15px;
 }
 
-.top-col {
+.top-left-col {
   padding-top: 5px;
+  padding-right: 10px;
+}
+
+.top-right-col {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.bot-col {
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .box {
@@ -74,4 +85,24 @@
 
 .expense-logger-image {
   object-position: 50% 10%;
+}
+
+@media (max-width: 768px) {
+  .top-left-col {
+    padding-right: 8px;
+  }
+
+  .top-right-col {
+    padding-left: 8px;
+  }
+
+  .bot-col {
+    padding-top: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-col {
+    padding: 0px 15px 15px 15px;
+  }
 }
