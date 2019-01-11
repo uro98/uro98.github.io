@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Yu Jo Tseng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura|Open+Sans|Offside|Roboto">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="../scss/style.min.css">
+
+    <!-- Site icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicons/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-104856333-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+
+  <body>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <!-- For jump-scrolling -->
+    <script src="../assets/jquery.scrollTo-2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="../js/main.js"></script>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <a class="navbar-brand logo" href="http://yujotseng.com">
+        <img src="../assets/img/Catstronomer.svg" width="31.2" height="31.2" class="d-inline-block" alt="">
+        Yu Jo Tseng
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="siteNav">
+        <ul class="nav navbar-nav navbar-right ml-auto">
+          <li class="nav-item"><a class="nav-link hover-bg" href="http://yujotseng.com">HOME</a></li>
+          <li class="nav-item"><a class="nav-link hover-bg" href="../assets/resume.pdf">RESUME</a></li>
+          <li class="nav-item"><a class="nav-link hover-bg" href="http://yujotseng.com/#about">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link main-nav-link" href="http://yujotseng.com/#work-experience">WORK EXPERIENCE</a></li>
+          <li class="nav-item"><a class="nav-link hover-bg" href="http://yujotseng.com/#projects">PROJECTS</a></li>
+          <li class="nav-item"><a class="nav-link main-nav-link" href="http://yujotseng.com/#activities">ACTIVITIES</a></li>
+          <li class="nav-item"><a class="nav-link hover-bg" href="#" onclick="scrollToId('contact')">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container-fluid project-main">
+      <div class="row justify-content-center">
+        <div class="col-md-9 col-lg-7 project-section">
+          <div class="project-intro">
+            <h1><em>Embedded and Robotics Society</em></h1>
+          </div>
+
+          <!-- <div class="img-with-caption">
+            <img src="../assets/img/edinburgh-castle.jpg"  class="img-fluid"/>
+            <p class="caption">Participants hacking at CreatED.</p>
+          </div> -->
+
+          <div class="container-fluid">
+            <div class="row project-info">
+              <div class="col-md-12">
+                <ul>
+                  <li><strong>Position:</strong> Partnership Manager</li>
+                  <li><strong>When:</strong> 2017–Present</li>
+                  <li><strong>Where:</strong> Edinburgh</li>
+                  <li><strong>Technologies:</strong> Electronics, Arduino, Raspberry Pi, Micro Bit</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail">
+            <p>
+              The University of Edinburgh <a href="http://ears-edi.com/" class="dark-blue-link">Embedded and Robotics Society</a>
+              runs fortnightly workshops, on the development of
+              <a onclick="toggleSection('embeddedDef')" class="dark-blue-link">embedded systems</a> and robots,
+              socials and the annual
+              <a href="https://createdhack.github.io/" class="dark-blue-link">CreatED</a> hackathon,
+              which was the first student-run hardware hackathon in the UK. I regularly mentor the workshops.
+              Initially, I was appointed Head Mentor, which meant that I also called for workshop mentors and organized mentor trainings.
+              Now, as Partnership Manager, I help secure sponsorships for CreatED.
+            </p>
+            <div id="embeddedDef" class="pop-out-box">
+             <p>
+               Embedded systems are computer systems that specialize in doing one thing and are often placed within (embedded)
+               in equally specialized hardware. Examples include digital watches, microwaves and remote controls. They are all around you!
+             </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-9 col-lg-7">
+            <div class="row">
+              <div class="col-sm-6 order-sm-2 footer-info text-center">
+                <h2 id="contact">Contact</h2>
+                <p>You can find me on</p>
+                <div class="links">
+                  <a href="https://www.linkedin.com/in/yujotseng/" class="footer-link" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                  <a href="https://github.com/uro98" class="footer-link" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                  <a href="https://twitter.com/yujotseng?lang=en" class="footer-link" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                  <a href="mailto:yujotseng@gmail.com"  class="footer-link" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <div class="col-sm-6 order-sm-1 vertical-align">
+                <img class="mx-auto d-block" src="../assets/img/Catstronomer-with-name.svg"/>
+              </div>
+            </div>
+            <p class="copyright">&copy; Yu Jo Tseng 2017 - 2019</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
