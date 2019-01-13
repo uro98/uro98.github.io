@@ -39,13 +39,17 @@ p {
   font-family: 'Open Sans', sans-serif;
 
   .section {
-    padding-top: 100px;
-    padding-bottom: 84px;
+    padding-top: 70px;
+    padding-bottom: 54px;
+  }
+
+  .light {
+    color: #6c6c6c;
   }
 }
 
 .pop-out-box {
-  margin: 30px 20px 12px 20px;
+  margin: 25px 20px 12px 20px;
   border: solid;
   border-width: 2px;
   display: none;
@@ -56,10 +60,22 @@ p {
   }
 }
 
+// Sketchfab embeds
+.left-model {
+  margin: 8px 16px 16px 0;
+}
+
+.right-model {
+  margin: 8px 0 16px 16px;
+}
+
 @import 'navbar';
 @import 'landing-page';
 @import 'about';
-@import 'experiences';
+@import 'skills';
+@import 'work-experience';
 @import 'projects';
+@import 'extracurricular-activities';
+@import 'hackathons';
 @import 'projects-page';
 @import 'footer';

@@ -3,19 +3,26 @@
 // About
 .about {
   color: #DCDCDC;
-  background-color: #2a3439;
+  background-color: #333B46; //2a3439
 
-  .about-text {
+  .about-wrapper {
     h2 {
       padding: 4px 0 4px 0;
       color: #fff;
     }
 
-    img {
+    .about-icon {
       height: 40.8px;
       width: 40.8px;
       vertical-align: middle;
       float: left;
+    }
+
+    .avatar {
+      width: 200px;
+      height: 200px;
+      border-radius: 15%;
+      margin: 16px 16px 16px 0;
     }
 
     p {

@@ -2,18 +2,41 @@
 
 // Projects
 .projects {
-  background-color: #DCDCDC;
+  background-color: #DCDCDC; //F7F7F7
+  padding-bottom: 64px !important;
 
   .current {
-    color: #2a3439;
+    color: #333B46;
   }
+
+  .portfolio {
+    padding: 0px;
+  }
+}
+
+.portfolio-col {
+  padding: 0px 15px 0px 15px;
+}
+
+.top-left-col {
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+.top-right-col {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.bot-col {
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .box {
   position: relative;
   height: 250px;
-  margin: 25px 0;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .box:hover {
@@ -62,4 +85,24 @@
 
 .expense-logger-image {
   object-position: 50% 10%;
+}
+
+@media (max-width: 768px) {
+  .top-left-col {
+    padding-right: 8px;
+  }
+
+  .top-right-col {
+    padding-left: 8px;
+  }
+
+  .bot-col {
+    padding-top: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-col {
+    padding: 0px 15px 15px 15px;
+  }
 }

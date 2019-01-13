@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="University of Edinburgh Computer Science student, Administrate Software Engineering Intern, FreshAir Radio Station Webmaster and Embedded and Robotics Society Partnership Manager. Check out my projects here.">
     <title>Yu Jo Tseng</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura|Open+Sans:300,400,600,700|Offside|Roboto">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="scss/style.min.css">
@@ -53,9 +53,11 @@
       <div class="collapse navbar-collapse" id="siteNav">
         <ul class="nav navbar-nav navbar-right ml-auto">
           <li class="nav-item"><a class="nav-link main-nav-link" href="#" onclick="$(window).scrollTo(0, 500);">HOME</a></li>
-          <li class="nav-item"><a class="nav-link main-nav-link" href="#" onclick="scrollToId('about')">ABOUT</a></li>
           <li class="nav-item"><a class="nav-link main-nav-link" href="assets/resume.pdf">RESUME</a></li>
+          <li class="nav-item"><a class="nav-link main-nav-link" href="#" onclick="scrollToId('about')">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link main-nav-link" href="#" onclick="scrollToId('work-experience')">WORK EXPERIENCE</a></li>
           <li class="nav-item"><a class="nav-link main-nav-link" href="#" onclick="scrollToId('projects')">PROJECTS</a></li>
+          <li class="nav-item"><a class="nav-link main-nav-link" href="#" onclick="scrollToId('extracurricular')">ACTIVITIES</a></li>
           <li class="nav-item"><a class="nav-link main-nav-link" href="#" onclick="scrollToId('contact')">CONTACT</a></li>
         </ul>
       </div>
@@ -77,42 +79,59 @@
       <!-- About section -->
       <div class="container-fluid about section" id="about">
         <div class="row justify-content-center">
-          <div class="col-md-9 col-lg-7 about-text">
-            <img src="assets/img/Catstronomer.svg"/><h2>&nbsp;About</h2>
-            <p>Between eating lots of curries and dreaming about stargazing while Edinburgh is overcast,
-              I like poking around with different technologies and seeing what could become of them.</p>
-            <p>My interest in software development started back in 2013 when I tried it and failed horribly, thankfully time healed.
-              Last summer, I worked at <strong>Administrate</strong> as a Software Engineering Intern,
-              then became a Tutor at the <strong>University of Edinburgh</strong>. Now I'm a Webmaster at <strong>FreshAir</strong> (university radio station)
-              and the Partnership Manager of <strong>EaRS</strong> (Embedded and Robotics Society).</p>
-            <p>Besides all that I also like to play. <a onclick="toggleSection('gamesList')" class="blue-link">These</a>
-              are some of my favourite games.</p>
-            <div id="gamesList" class="pop-out-box">
-             <p>The Witcher 3, Zero Escape Series, Dark Souls 3, League of Legends, Grand Theft Auto V, Layers of Fear, The Wolf Among Us &amp;
-                The Walking Dead</p>
+          <div class="col-md-9 col-lg-7 about-wrapper">
+            <img src="assets/img/Catstronomer.svg" class="about-icon"/><h2>&nbsp;About</h2>
+            <div class="row">
+              <div class="col-md-12">
+                <img src="assets/img/avatar.png" class="avatar img-fluid float-sm-left d-none d-sm-block"/>
+                <img src="assets/img/avatar.png" class="avatar img-fluid mx-auto d-block d-sm-none"/>
+                <p>Back in 2013, I tried making an Android live wallpaper for a school project.
+                  It was a total disaster, but was also when my interest in software development started.</p>
+                <p>Last summer, I worked at <strong>Administrate</strong> as a Software Engineer Intern,
+                  then became a Tutor at the <strong>University of Edinburgh</strong>.
+                  Now, I'm a Webmaster at <strong>FreshAir</strong> and the Partnership Manager of <strong>EaRS</strong>.</p>
+                <p>In my spare time, I enjoy eating curry until I can't move, dreaming about stargazing while Edinburgh is overcast
+                  and playing. <a onclick="toggleSection('gamesList')" class="blue-link">These</a>
+                  are some of my favourite games.</p>
+                <div id="gamesList" class="pop-out-box">
+                 <p>The Witcher 3, Zero Escape, Dark Souls 3, League of Legends, Grand Theft Auto V, Layers of Fear, The Wolf Among Us &amp;
+                    The Walking Dead</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- <div class="container-fluid experiences section" id="experiences">
+      <!-- Technical skills section -->
+      <div class="container-fluid skills section">
         <div class="row justify-content-center">
-          <div class="col-md-5 col-lg-4">
-            <h2>Work Experience</h2>
-            <ul>
-              <li>Administrate</li>
-            </ul>
-          </div>
-          <div class="col-md-4 col-lg-3">
-            <h2>Voluntary Experience</h2>
-            <ul>
-              <li>FreshAir</li>
-              <li>EaRS</li>
-              <li>GameDevSoc</li>
+          <div class="col-md-9 col-lg-7">
+            <h2>Technical Skills</h2>
+            <ul class="horizontal-list">
+              <li>Java</li>
+              <li>Python</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>GraphQL</li>
+              <li>SQLAlchemy</li>
+              <li>Unity</li>
+              <li>Git</li>
             </ul>
           </div>
         </div>
-      </div> -->
+      </div>
+
+      <!-- Work experience section -->
+      <div class="container-fluid work-experience section" id="work-experience">
+        <div class="row justify-content-center">
+          <div class="col-md-9 col-lg-7">
+            <h2>Work Experience</h2>
+            <p><strong><a href="experience/the-uni-of-ed.html" class="blue-link">The University of Edinburgh</a></strong>: Tutor (Oct 2018–Nov 2018)</p>
+            <p><strong><a href="experience/administrate.html" class="blue-link">Administrate</a></strong>: Software Engineer Intern (Summer 2018)</p>
+          </div>
+        </div>
+      </div>
 
       <!-- Projects section -->
       <div class="container-fluid projects section" id="projects">
@@ -123,38 +142,52 @@
               Currently, I am working on a Discord bot that scrapes Reddit posts.</p>
 
             <!-- Portfolio -->
-            <div class="box text-box" onclick="location.href='https://github.com/uro98/gratis';">
-              <!-- <img src="assets/img/bohred-atoms-menu.png" class="image"/> -->
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6 middle">
-                    <p class="title">GRATIS</p>
-                    <hr class="line" />
-                    <p class="description">Beep Boop Coming Soon</p>
+            <div class="container-fluid portfolio">
+              <div class="row">
+                <div class="col-sm-6 portfolio-col top-left-col">
+                  <div class="box text-box" onclick="location.href='https://github.com/uro98/gratis';">
+                    <!-- <img src="assets/img/bohred-atoms-menu.png" class="image"/> -->
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-xl-10 middle">
+                          <p class="title">GRATIS</p>
+                          <hr class="line" />
+                          <p class="description">Beep Boop Coming Soon</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 portfolio-col top-right-col">
+                  <div class="box text-box" onclick="location.href='projects/expense-logger.html';">
+                    <img src="assets/img/expense-logger/expense-logger-collage.png" class="image expense-logger-image"/>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-xl-10 middle">
+                          <p class="title">EXPENSE LOGGER</p>
+                          <hr class="line" />
+                          <p class="description">An Android App for Managing Finances</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="box text-box" onclick="location.href='projects/expense-logger.html';">
-              <img src="assets/img/expense-logger/expense-logger-collage.png" class="image expense-logger-image"/>
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6 middle">
-                    <p class="title">EXPENSE LOGGER</p>
-                    <hr class="line" />
-                    <p class="description">An Android App for Managing Finances</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="box" onclick="location.href='projects/bohred-atoms.html';">
-              <img src="assets/img/bohred-atoms/bohred-atoms-screenshot.png" class="image bohred-atoms-image"/>
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6 middle">
-                    <p class="title">BOHRED ATOMS<br />
-                    <hr class="line" />
-                    <p class="description">A Local Multiplayer 2D Shooter Game</p>
+
+              <div class="row">
+                <div class="col-md-12 portfolio-col bot-col">
+                  <div class="box" onclick="location.href='projects/bohred-atoms.html';">
+                    <img src="assets/img/bohred-atoms/bohred-atoms-screenshot.png" class="image bohred-atoms-image"/>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-6 middle">
+                          <p class="title">BOHRED ATOMS<br />
+                          <hr class="line" />
+                          <p class="description">A Local Multiplayer 2D Shooter Game</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -176,21 +209,38 @@
               <p class="title">The void</p>
             </div>
           </div>-->
-      <!-- <div class="container-fluid hackathons section" id="hackathons">
+
+      <!-- Extracurricular activities section -->
+      <div class="container-fluid extracurricular section" id="extracurricular">
+        <div class="row justify-content-center">
+          <div class="col-md-9 col-lg-7">
+            <h2>Extracurricular Activities</h2>
+            <p><strong><a href="experience/freshair.html" class="blue-link">FreshAir.org.uk</a></strong>: Webmaster (2018–Present)</p>
+            <p><strong>Google CodeU Program</strong>: Participant (Summer 2018)</p>
+            <!-- <p><strong><a href="experience/codeu.html" class="blue-link">Google CodeU Program</a></strong>: Participant (Summer 2018)</p> -->
+            <p><strong><a href="experience/ears.html" class="blue-link">Embedded and Robotics Society</a></strong>: Partnership Manager (2017–Present)</p>
+            <p><strong><a href="experience/gamedevsoc.html" class="blue-link">GameDevSoc</a></strong>: Outreach & Social Media Coordinator (2017–Present)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hackathons section -->
+      <div class="container-fluid hackathons section">
         <div class="row justify-content-center">
           <div class="col-md-9 col-lg-7">
             <h2>Hackathons</h2>
-            <ul>
-              <li>Unbias Hackathon</li>
-              <li>Amazon Early Insights</li>
-              <li>Hack the Burgh</li>
-              <li>GreatUniHack</li>
-              <li>StudentHack</li>
-              <li>StacsHack</li>
-            </ul>
+            <p><strong>Hack Cambridge 4D</strong> <span class="light">(Cambridge, Jan 2019)</span></p>
+            <p><strong>HackTheMidlands 3.0</strong>: <a href="https://github.com/notexactlyawe/lumi-server" class="dark-blue-link">lumÏ</a> <span class="light">(Birmingham, Nov 2018)</span></p>
+            <p><strong>Unbias Hackathon</strong>: <a href="https://github.com/uro98/discourse-report" class="dark-blue-link">Discourse Report</a> <span class="light">(Edinburgh, Jul 2018)</span></p>
+            <p><strong>Amazon Early Insights</strong>: <a href="https://github.com/uro98/party-buddy" class="dark-blue-link">Party Buddy</a> <span class="light">(Edinburgh, Apr 2018)</span></p>
+            <!-- <p><strong><a href="experience/aei.html" class="dark-blue-link">Amazon Early Insights</a></strong>: <a href="https://github.com/uro98/party-buddy" class="dark-blue-link">Party Buddy</a> <span class="light">(Edinburgh, Apr 2018)</span></p> -->
+            <p><strong>HackTheBurgh</strong>: Doom Bot <span class="light">(Edinburgh, Mar 2018)</span></p>
+            <p><strong>GreatUniHack</strong>: <a href="https://github.com/officialgupta/tadNet" class="dark-blue-link">NetSquare</a> <span class="light">(Manchester, Nov 2017)</span></p>
+            <p><strong>StudentHack V</strong>: <a href="https://github.com/officialgupta/placeIt" class="dark-blue-link">PlaceIt</a> <span class="light">(Manchester, Mar 2017)</span></p>
+            <p><strong>StacsHack III</strong>: <a href="https://github.com/Dakinola892/mysaber" class="dark-blue-link">MySaber</a> <span class="light">(St Andrews, Mar 2017)</span></p>
           </div>
         </div>
-      </div> -->
+      </div>
     </main>
 
     <footer>
@@ -202,10 +252,10 @@
                 <h2 id="contact">Contact</h2>
                 <p>You can find me on</p>
                 <div class="links">
-                  <a href="https://www.linkedin.com/in/yujotseng/" class="footer-link" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-                  <a href="https://github.com/uro98" class="footer-link" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-                  <a href="https://twitter.com/yujotseng?lang=en" class="footer-link" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-                  <a href="mailto:yujotseng@gmail.com"  class="footer-link" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+                  <a href="https://www.linkedin.com/in/yujotseng/" class="footer-link" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                  <a href="https://github.com/uro98" class="footer-link" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                  <a href="https://twitter.com/yujotseng?lang=en" class="footer-link" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                  <a href="mailto:yujotseng@gmail.com"  class="footer-link" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
                 </div>
               </div>
               <div class="col-sm-6 order-sm-1 vertical-align">
