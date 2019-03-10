@@ -23,13 +23,12 @@
   }
 
   .collapse .nav {
-    margin-right: 50px;
+    margin-right: 20px; // 50px for Open Sans
 
     .nav-item {
       .nav-link {
         padding: 14px 17px;
         color: #fff;
-        font-family: 'Open Sans', sans-serif;
         font-size: 14px;
         transition: color 0.2s ease-out, background-color 0.2s ease-out;
       }

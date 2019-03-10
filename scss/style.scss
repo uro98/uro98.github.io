@@ -7,6 +7,7 @@
 html, body {
   height: 100%;
   width: 100%;
+  font-family: 'Metropolis', sans-serif;
 }
 
 h2 {
@@ -36,8 +37,6 @@ p {
 }
 
 .main {
-  font-family: 'Open Sans', sans-serif;
-
   .section {
     padding-top: 70px;
     padding-bottom: 54px;
@@ -67,6 +66,25 @@ p {
 
 .right-model {
   margin: 8px 0 16px 16px;
+}
+
+// Fonts
+@font-face {
+    font-family: "Metropolis";
+    src: url("../assets/fonts/metropolis/Metropolis-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Metropolis";
+    font-weight: bold;
+    src: url("../assets/fonts/metropolis/Metropolis-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Metropolis";
+    font-weight: bold;
+    font-style: italic;
+    src: url("../assets/fonts/metropolis/Metropolis-SemiBoldItalic.otf") format("opentype");
 }
 
 @import 'navbar';
