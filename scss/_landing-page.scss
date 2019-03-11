@@ -20,6 +20,18 @@
     color: #fff;
     //font-weight: bold; // For Allura
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fffb1a, 0 0 20px #fffb1a, 0 0 35px #fffb1a, 0 0 40px #fffb1a;
+
+    .first-name {
+      animation-name: first_name_flicker;
+      animation-duration: 3.5s;
+      animation-iteration-count: 1;
+    }
+
+    .last-name {
+      animation-name: last_name_flicker;
+      animation-duration: 3.5s;
+      animation-iteration-count: 1;
+    }
   }
 
   p, a {
@@ -71,6 +83,36 @@ a:hover {
   }
 }
 
+// Animations
+@keyframes first_name_flicker {
+  from {opacity: .1;}
+  20% {opacity: .1;}
+  21% {opacity: 1;}
+  31% {opacity: 1;}
+  32% {opacity: .1;}
+  48% {opacity: .1;}
+  49% {opacity: 1;}
+  52% {opacity: 1;}
+  53% {opacity: .1;}
+  54% {opacity: .1;}
+  55% {opacity: 1;}
+  56% {opacity: 1;}
+  56% {opacity: .1;}
+  75% {opacity: .1;}
+  to {opacity: 1;}
+}
+
+@keyframes last_name_flicker {
+  from {opacity: .1;}
+  20% {opacity: .1;}
+  21% {opacity: 1;}
+  31% {opacity: 1;}
+  32% {opacity: .1;}
+  75% {opacity: .1;}
+  to {opacity: 1;}
+}
+
+// Media queries
 @media (max-width: 1200px) {
   .jumbotron .content {
     h1 {
