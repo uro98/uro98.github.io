@@ -1,3 +1,57 @@
+class Navbar extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="navbar-brand logo" href="http://yujotseng.com">
+          <img src="../assets/img/Catstronomer.svg" width="31.2" height="31.2" class="d-inline-block" alt="">
+          Yu Jo Tseng
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="siteNav">
+          <ul class="nav navbar-nav navbar-right ml-auto">
+            <li class="nav-item"><a class="nav-link hover-bg" href="http://yujotseng.com">HOME</a></li>
+            <li class="nav-item"><a class="nav-link hover-bg" href="../assets/resume.pdf">RESUME</a></li>
+            <li class="nav-item"><a class="nav-link hover-bg" href="http://yujotseng.com/#about">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link hover-bg" href="http://yujotseng.com/#work-experience">WORK EXPERIENCE</a></li>
+            <li class="nav-item"><a class="nav-link hover-bg" href="http://yujotseng.com/#projects">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link hover-bg" href="http://yujotseng.com/#activities">ACTIVITIES</a></li>
+            <li class="nav-item"><a class="nav-link hover-bg" href="#" onclick="scrollToId('contact')">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+    `;
+  }
+}
+
+class MainNavbar extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark main-navbar">
+        <a class="navbar-brand logo" href="http://yujotseng.com">
+          <img src="assets/img/Catstronomer.svg" width="31.2" height="31.2" class="d-inline-block" alt="">
+          Yu Jo Tseng
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="siteNav">
+          <ul class="nav navbar-nav navbar-right ml-auto">
+            <li class="nav-item"><a class="nav-link main-nav-link" href="#" onclick="$(window).scrollTo(0, 500);">HOME</a></li>
+            <li class="nav-item"><a class="nav-link main-nav-link" href="assets/resume.pdf">RESUME</a></li>
+            <li class="nav-item"><a class="nav-link main-nav-link" href="#" onclick="scrollToId('about')">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link main-nav-link" href="#" onclick="scrollToId('work-experience')">WORK EXPERIENCE</a></li>
+            <li class="nav-item"><a class="nav-link main-nav-link" href="#" onclick="scrollToId('projects')">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link main-nav-link" href="#" onclick="scrollToId('extracurricular')">ACTIVITIES</a></li>
+            <li class="nav-item"><a class="nav-link main-nav-link" href="#" onclick="scrollToId('contact')">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+    `;
+  }
+}
+
 class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -59,5 +113,7 @@ class MainFooter extends HTMLElement {
   }
 }
 
+customElements.define('page-navbar', Navbar);
+customElements.define('main-navbar', MainNavbar);
 customElements.define('page-footer', Footer);
 customElements.define('main-footer', MainFooter);
