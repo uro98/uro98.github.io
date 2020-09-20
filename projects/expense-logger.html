@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="The first step to saving money is to see where your money is going! Expense Logger is an Android application that allows you to easily log your expenses wherever you go and see reports analyzing your monthly or yearly spending.">
     <title>Yu Jo Tseng</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura|Open+Sans|Offside|Roboto">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="../scss/style.min.css">
@@ -27,9 +27,6 @@
       ga('create', 'UA-104856333-1', 'auto');
       ga('send', 'pageview');
     </script>
-  </head>
-
-  <body>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Bootstrap -->
@@ -40,7 +37,11 @@
     <!-- For Galleria -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js"></script>
+  </head>
+
+  <body>
     <script src="../js/main.js"></script>
+    <script src="../js/components.js"></script>
 
     <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
@@ -127,41 +128,11 @@
               <li><strong>Aesthetics</strong>: Visually appealing charts with beautiful colours</li>
               <li><strong>All expense list</strong>: See your most expensive expenses of all time with an ordered list</li>
             </ul>
-            <!-- <hr class="line project-line" />
-            <p>One of the challenges I encountered was making the electrons orbit the nucleus while staying in their orbits when the atom moves.
-               The atoms in my failed attempts literally exploded &#9762. In hindsight it wasn't a difficult problem to solve,
-               but back then it taught me a lot about how to find and come up with solutions.</p>
-            <p>In the end I was very happy with how it turned out. The scope was just right for me not to be completely lost yet still
-               learn a lot. If I were to do it again though I would make the code more object-oriented and maybe add more weapons and an AI.
-               But for now, onward to the next project!</p> -->
           </div>
         </div>
       </div>
     </main>
 
-    <footer>
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-md-9 col-lg-7">
-            <div class="row">
-              <div class="col-sm-6 order-sm-2 footer-info text-center">
-                <h2 id="contact">Contact</h2>
-                <p>You can find me on</p>
-                <div class="links">
-                  <a href="https://www.linkedin.com/in/yujotseng/" class="footer-link" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-                  <a href="https://github.com/uro98" class="footer-link" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-                  <a href="https://twitter.com/yujotseng?lang=en" class="footer-link" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-                  <a href="mailto:yujotseng@gmail.com"  class="footer-link" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              <div class="col-sm-6 order-sm-1 vertical-align">
-                <img class="mx-auto d-block" src="../assets/img/Catstronomer-with-name.svg"/>
-              </div>
-            </div>
-            <p class="copyright">&copy; Yu Jo Tseng 2017–2020</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <page-footer></page-footer>
   </body>
 </html>
