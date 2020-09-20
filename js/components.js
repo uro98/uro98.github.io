@@ -4,7 +4,7 @@ class Navbar extends HTMLElement {
       <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <a class="navbar-brand logo" href="http://yujotseng.com">
           <img src="../assets/img/Catstronomer.svg" width="31.2" height="31.2" class="d-inline-block" alt="">
-          Yu Jo Tseng
+          Yu-Jo Tseng
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="fa fa-bars"></span>
@@ -31,7 +31,7 @@ class MainNavbar extends HTMLElement {
       <nav class="navbar navbar-expand-lg fixed-top navbar-dark main-navbar">
         <a class="navbar-brand logo" href="http://yujotseng.com">
           <img src="assets/img/Catstronomer.svg" width="31.2" height="31.2" class="d-inline-block" alt="">
-          Yu Jo Tseng
+          Yu-Jo Tseng
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="fa fa-bars"></span>
