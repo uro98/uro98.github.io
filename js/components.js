@@ -16,6 +16,7 @@ class Navbar extends HTMLElement {
             <li class="nav-item"><a class="nav-link hover-bg" href="http://yujotseng.com/#about">ABOUT</a></li>
             <li class="nav-item"><a class="nav-link hover-bg" href="http://yujotseng.com/#work-experience">WORK EXPERIENCE</a></li>
             <li class="nav-item"><a class="nav-link hover-bg" href="http://yujotseng.com/#projects">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link hover-bg" href="http://yujotseng.com/#education">EDUCATION</a></li>
             <li class="nav-item"><a class="nav-link hover-bg" href="http://yujotseng.com/#activities">ACTIVITIES</a></li>
             <li class="nav-item"><a class="nav-link hover-bg" href="#" onclick="scrollToId('contact')">CONTACT</a></li>
           </ul>
@@ -43,7 +44,8 @@ class MainNavbar extends HTMLElement {
             <li class="nav-item"><a class="nav-link main-nav-link" href="#" onclick="scrollToId('about')">ABOUT</a></li>
             <li class="nav-item"><a class="nav-link main-nav-link" href="#" onclick="scrollToId('work-experience')">WORK EXPERIENCE</a></li>
             <li class="nav-item"><a class="nav-link main-nav-link" href="#" onclick="scrollToId('projects')">PROJECTS</a></li>
-            <li class="nav-item"><a class="nav-link main-nav-link" href="#" onclick="scrollToId('extracurricular')">ACTIVITIES</a></li>
+            <li class="nav-item"><a class="nav-link main-nav-link" href="#" onclick="scrollToId('education')">EDUCATION</a></li>
+            <li class="nav-item"><a class="nav-link main-nav-link" href="#" onclick="scrollToId('activities')">ACTIVITIES</a></li>
             <li class="nav-item"><a class="nav-link main-nav-link" href="#" onclick="scrollToId('contact')">CONTACT</a></li>
           </ul>
         </div>
