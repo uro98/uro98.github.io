@@ -75,7 +75,7 @@ class Footer extends HTMLElement {
                   <img class="mx-auto d-block" src="../assets/img/Catstronomer-with-name.svg"/>
                 </div>
               </div>
-              <p class="copyright">&copy; Yu Jo Tseng 2017–2022</p>
+              <p class="copyright">&copy; Yu-Jo Tseng 2017–2022</p>
             </div>
           </div>
         </div>
@@ -106,7 +106,7 @@ class MainFooter extends HTMLElement {
                 </div>
               </div>
               <p class="copyright">Street background photo from <a href="http://blog.xuite.net/a303210/twblog/91675095" class="blue-link">here</a></p>
-              <p class="copyright">&copy; Yu Jo Tseng 2017–2022</p>
+              <p class="copyright">&copy; Yu-Jo Tseng 2017–2022</p>
             </div>
           </div>
         </div>
