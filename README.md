@@ -8,7 +8,3 @@ This is my [personal website](http://yujotseng.com) hosted on GitHub Pages. You 
 * [jQuery.scrollTo](https://github.com/flesler/jquery.scrollTo) - Smooth scrolling to sections
 * [Bootstrap](https://getbootstrap.com/) - Responsiveness
 * [Galleria](https://galleria.io/) - JavaScript framework for image galleries
-
-## Author
-
-Yu-Jo Tseng
